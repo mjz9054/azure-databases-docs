@@ -29,7 +29,7 @@ Upon completing the root CA rotation, there's a transition where the old DigiCer
 
 - Download **DigiCertGlobalRootCA** & **DigiCertGlobalRootG2** CA from the links below:
 
-  - [https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem)
+  - [https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem)
   - [https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt.pem)
 
 - Generate a combined CA certificate store with both **DigiCertGlobalRootCA** and **DigiCertGlobalRootG2** certificates included.
@@ -72,7 +72,7 @@ Upon completing the root CA rotation, there's a transition where the old DigiCer
 
 ## What if we removed the DigiCertGlobalRootCA certificate?
 
-You start to observe connectivity errors while connecting to your Azure Database for MySQL. You need to [configure SSL](how-to-connect-tls-ssl.md) with [DigiCertGlobalRootCA](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) certificate again to maintain connectivity.
+You start to observe connectivity errors while connecting to your Azure Database for MySQL. You need to [configure SSL](how-to-connect-tls-ssl.md) with [DigiCertGlobalRootCA](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) certificate again to maintain connectivity.
 
 ### What if we would like to make sure the MySQL connections are established upon the DigiCertGlobalRootG2 CA?
 
