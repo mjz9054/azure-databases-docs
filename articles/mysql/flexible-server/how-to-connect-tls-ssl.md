@@ -103,7 +103,7 @@ To set TLS versions on your Azure Database for MySQL Flexible Server instance, y
 
 ### Download the public SSL certificate
 
-To use encrypted connections with your client applications,you need to download the [public SSL certificate](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem), which is also available in Azure portal Networking pane as shown in the screenshot below.
+To use encrypted connections with your client applications,you need to download the [public SSL certificate](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem), which is also available in Azure portal Networking pane as shown in the screenshot below.
 
 :::image type="content" source="media/how-to-connect-tls-ssl/download-ssl.png" alt-text="Screenshot showing how to download public SSL certificate from Azure portal." lightbox="media/how-to-connect-tls-ssl/download-ssl.png":::
 
@@ -122,7 +122,7 @@ The following example shows how to connect to your server using the mysql comman
 
 ```bash
 sudo apt-get install mysql-client
-wget --no-check-certificate https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
+wget --no-check-certificate https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
 mysql -h mydemoserver.mysql.database.azure.com -u mydemouser -p --ssl-mode=REQUIRED --ssl-ca=DigiCertGlobalRootCA.crt.pem
 ```
 
@@ -175,7 +175,7 @@ To establish an encrypted connection to your Azure Database for MySQL Flexible S
 
 ### WordPress
 
-Download [SSL public certificate](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) and add the following lines in wp-config.php after the line ```// **MySQL settings - You can get this info from your web host** //```.
+Download [SSL public certificate](https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) and add the following lines in wp-config.php after the line ```// **MySQL settings - You can get this info from your web host** //```.
 
 ```php
 //** Connect with SSL ** //
